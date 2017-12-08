@@ -12,7 +12,7 @@ from flask import make_response
 app = Flask(__name__)
 
 
-@app.route('/hackathonapplication', methods=['POST'])
+@app.route('/hackathonapplication', methods=['GET'])
 def webhook():
     req = request.get_json(silent=True, force=True)
 
